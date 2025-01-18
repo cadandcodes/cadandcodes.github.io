@@ -35,7 +35,13 @@ export default {
     },
   },
 
-  // Global CSS
+  nitro: {
+    prerender: {
+      route: ["/", "/about", "/contact", "/services", "/blog"],  // Add routes to prerender
+    },
+  },
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css", "@/assets/css/normalize.css"],
 
   // Plugins to run before rendering the page
@@ -57,7 +63,6 @@ export default {
       },
   },
 
-  compatibilityDate: "2025-01-18",
 }
   /**
     buildDir: 'nuxt-dist',

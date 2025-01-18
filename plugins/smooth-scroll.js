@@ -1,6 +1,11 @@
-import Vue from 'vue'
-import VueSmoothScroll from 'vue3-smooth-scroll'
+import SmoothScroll from 'smooth-scroll'
 
-Vue.use(vueSmoothScroll)
-
-export default {}
+export default defineNuxtPlugin(() => {
+  if (process.client) {
+    // This ensures the code runs only in the browser
+    new SmoothScroll('a[href*="#"]', {
+      speed: 800, // Adjust scroll speed
+      offset: 50, // Optional: Offset from the top
+    })
+  }
+})

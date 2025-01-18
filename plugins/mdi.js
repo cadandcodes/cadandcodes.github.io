@@ -1,28 +1,22 @@
-import Vue from 'vue'
-import ChevronDownIcon from 'vue-material-design-icons/ChevronDown.vue'
-import ChevronUpIcon from 'vue-material-design-icons/ChevronUp.vue'
-import ChevronRightIcon from 'vue-material-design-icons/ChevronRight.vue'
-import PlusThickIcon from 'vue-material-design-icons/PlusThick.vue'
-import MinusThickIcon from 'vue-material-design-icons/MinusThick.vue'
-import ArrowUpIcon from 'vue-material-design-icons/ArrowUp.vue'
-import ArrowRightIcon from 'vue-material-design-icons/ArrowRight.vue'
-import CheckCircleIcon from 'vue-material-design-icons/CheckCircle.vue'
-import SegmentIcon from 'vue-material-design-icons/Segment.vue'
-import CloseIcon from 'vue-material-design-icons/Close.vue'
+// Import Vuetify and its styles
+import { createVuetify } from 'vuetify'
+import 'vuetify/styles'
 
-const components = {
-  ChevronDownIcon,
-  ChevronUpIcon,
-  ChevronRightIcon,
-  PlusThickIcon,
-  MinusThickIcon,
-  ArrowUpIcon,
-  ArrowRightIcon,
-  CheckCircleIcon,
-  SegmentIcon,
-  CloseIcon,
-}
+// Import Material Design Icons (MDI)
+import '@mdi/font/css/materialdesignicons.css'
 
-Object.entries(components).forEach(([name, component]) => {
-  Vue.component(name, component)
+// Export the Nuxt plugin
+export default defineNuxtPlugin((nuxtApp) => {
+  // Create the Vuetify instance with MDI icons
+  const vuetify = createVuetify({
+    icons: {
+      defaultSet: 'mdi', // Specify MDI as the default icon set
+    },
+    theme: {
+      defaultTheme: 'light', // Optional: Configure the default theme
+    },
+  })
+
+  // Use Vuetify in the Nuxt app
+  nuxtApp.vueApp.use(vuetify)
 })
