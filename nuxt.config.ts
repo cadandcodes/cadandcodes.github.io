@@ -35,13 +35,20 @@ export default {
     },
   },
 
-  css: ["@/assets/css/main.css", "@/assets/css/normalize.css"], // Global CSS
+  // Global CSS
+  css: ["@/assets/css/main.css", "@/assets/css/normalize.css"],
 
-  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],  // Plugins to run before rendering the page
+  // Plugins to run before rendering the page
+  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],
+
   components: true,
 
-  buildModules: ['@nuxtjs/eslint-module'], // Build modules
-  modules: [],  // Modules for dev and build (recommended)
+  // Build modules
+  buildModules: ['@nuxtjs/eslint-module'],
+
+  // Modules for dev and build (recommended)
+  modules: [],
+
   build: {
     postcss: {
       plugins: {
@@ -51,8 +58,10 @@ export default {
   },
 
   compatibilityDate: "2025-01-18",
-},
-/**
-  buildDir: 'nuxt-dist',
-   */
+}
+  /**
+    buildDir: 'nuxt-dist',
+     */,
+
+  compatibilityDate: "2025-01-18",
 };
