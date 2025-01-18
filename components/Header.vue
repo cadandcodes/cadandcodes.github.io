@@ -2,7 +2,7 @@
     <header class="bg-gray-800 p-4 text-white flex justify-between items-center">
       <!-- Company Logo -->
       <div class="text-2xl font-bold">
-        <a href="/">Company Name</a>
+        <a href="/">CAD & CODES</a>
       </div>
       <!-- Navigation Links -->
       <nav>
