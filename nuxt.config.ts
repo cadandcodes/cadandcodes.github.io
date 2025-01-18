@@ -45,6 +45,7 @@ export default {
     prerender: {
       route: ["/", "/about", "/contact", "/services", "/blog"], // Add routes to prerender
     },
+    preset: 'static', // Set the Nitro preset to static
   },
 
   // Global CSS files to include
@@ -78,6 +79,7 @@ export default {
         autoprefixer: {}, // Autoprefixer for CSS
       },
     },
+    transpile: []
   },
 
   // Compatibility date for future changes
