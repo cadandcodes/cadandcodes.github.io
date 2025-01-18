@@ -1,11 +1,17 @@
 <template>
   <div>
-    <h1>Welcome to cadandcodes.github.io</h1>
-    <p>This is a Nuxt 3 static website deployed on GitHub Pages.</p>
+    <Header />
+    <main class="p-4">
+      <h2 class="text-xl font-semibold">Welcome to Our Company</h2>
+      <p class="mt-2">We provide XYZ services...</p>
+    </main>
+    <Footer />
   </div>
 </template>
 
 <script setup>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 // Add your scripts here
 </script>
 
