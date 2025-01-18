@@ -1,0 +1,1 @@
+import{H as a,F as o}from"./ZKqmDZFw.js";import{v as r,z as s,x as t,t as c}from"./CMDwfFvD.js";const l={class:"w-full"},_={__name:"services",setup(n){return(i,e)=>(c(),r("div",l,[s(a),e[0]||(e[0]=t("main",{class:"p-4"},[t("h1",{class:"text-xl font-semibold"},"Service Page")],-1)),s(o)]))}};export{_ as default};

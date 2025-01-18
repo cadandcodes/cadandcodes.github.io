@@ -1,22 +1,25 @@
-// Import Vuetify and its styles
+// Import Vuetify for UI components and its associated styles
 import { createVuetify } from 'vuetify'
-import 'vuetify/styles'
+import 'vuetify/styles' // Ensure Vuetify styles are included
 
-// Import Material Design Icons (MDI)
+// Import Material Design Icons (MDI) to use with Vuetify components
 import '@mdi/font/css/materialdesignicons.css'
 
-// Export the Nuxt plugin
+// Export a Nuxt plugin to integrate Vuetify with the Nuxt application
 export default defineNuxtPlugin((nuxtApp) => {
-  // Create the Vuetify instance with MDI icons
+  // Create the Vuetify instance and configure it
   const vuetify = createVuetify({
+    // Configure the default icon set for Vuetify components
     icons: {
-      defaultSet: 'mdi', // Specify MDI as the default icon set
+      defaultSet: 'mdi', // Use Material Design Icons (MDI)
     },
+    // Optional: Define the default theme for the application
     theme: {
-      defaultTheme: 'light', // Optional: Configure the default theme
+      defaultTheme: 'light', // Set the default theme to 'light'
     },
   })
 
-  // Use Vuetify in the Nuxt app
+  // Integrate the Vuetify instance with the Nuxt application's Vue instance
   nuxtApp.vueApp.use(vuetify)
 })
+

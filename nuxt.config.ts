@@ -1,32 +1,37 @@
 import { postcss } from "tailwindcss";
-import { plugins } from "./tailwind.config";
+import plugins from "./tailwind.config";
 
 export default {
+  // Specify the deployment target as static site generation
   target: "static",
-  router: {base: "/cadandcodes.github.io/"},
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Set base URL for the router
+  router: {
+    base: "/cadandcodes.github.io/",
+  },
+
+  // Global page headers configuration
   head: {
     title: "cadandcodes.com",
     htmlAttrs: {
-      lang: "en",
+      lang: "en", // Set the language attribute for the HTML tag
     },
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {hid: "description",name: "description",content: "",},
-      {name: "format-detection", content: "telephone=no"},
+      { charset: "utf-8" }, // Character encoding for the HTML document
+      { name: "viewport", content: "width=device-width, initial-scale=1" }, // Responsive design settings
+      { hid: "description", name: "description", content: "" }, // Meta description for SEO
+      { name: "format-detection", content: "telephone=no" }, // Disable automatic detection of phone numbers
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { 
-        rel: "stylesheet", 
-        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap',
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }, // Link to favicon
+      {
+        rel: "stylesheet",
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap', // Import Poppins font
       },
     ],
   },
 
-  // vite configurations
+  // Vite configuration options
   vite: {
     resolve: {
       alias: {
@@ -35,38 +40,46 @@ export default {
     },
   },
 
+  // Nitro configuration for prerendering routes
   nitro: {
     prerender: {
-      route: ["/", "/about", "/contact", "/services", "/blog"],  // Add routes to prerender
+      route: ["/", "/about", "/contact", "/services", "/blog"], // Add routes to prerender
     },
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/main.css", "@/assets/css/normalize.css"],
+  // Global CSS files to include
+  css: [
+    "@/assets/css/main.css",
+    "@/assets/css/normalize.css",
+  ],
 
   // Plugins to run before rendering the page
-  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],
+  plugins: [
+    '~/plugins/smooth-scroll.js',
+    '~/plugins/mdi.js',
+  ],
 
+  // Automatic components import
   components: true,
 
   // Build modules
-  buildModules: ['@nuxtjs/eslint-module'],
+  buildModules: [
+    '@nuxtjs/eslint-module', // ESLint module for code linting
+  ],
 
-  // Modules for dev and build (recommended)
+  // Modules for development and build
   modules: [],
 
+  // Build configuration
   build: {
     postcss: {
       plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
+        tailwindcss: {}, // Tailwind CSS integration
+        autoprefixer: {}, // Autoprefixer for CSS
       },
+    },
   },
 
-}
-  /**
-    buildDir: 'nuxt-dist',
-     */,
-
+  // Compatibility date for future changes
   compatibilityDate: "2025-01-18",
 };
