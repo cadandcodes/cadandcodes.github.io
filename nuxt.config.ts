@@ -1,71 +1,58 @@
+import { postcss } from "tailwindcss";
+import { plugins } from "./tailwind.config";
+
 export default {
-  // default is 'server'
   target: "static",
+  router: {base: "/cadandcodes.github.io/"},
 
-  router: {
-    base: "/cadandcodes.github.io/",
-  },
-
-  // other configurations
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "cadandcodes.github.io",
+    title: "cadandcodes.com",
+    htmlAttrs: {
+      lang: "en",
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "My Nuxt.js project",
+      {hid: "description",name: "description",content: "",},
+      {name: "format-detection", content: "telephone=no"},
+    ],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { 
+        rel: "stylesheet", 
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap',
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
-  css: [
-    // Global CSS
-    "@/assets/css/main.css",
-  ],
-
-  postcss: {
-    plugins: {
-      
-      tailwindcss: {},          // Tailwind CSS plugin to use Tailwind CSS
-      autoprefixer: {},         // Autoprefixer plugin to add vendor prefixes to CSS
-
-      "postcss-nested": {},     // PostCSS Nested plugin to use nested rules in CSS
-
-      // Example: PostCSS Preset Env plugin to use future CSS features today
-      "postcss-preset-env": {
-        stage: 1, // Specify the stage of CSS features you want to use
-        features: {
-          "nesting-rules": true, // Enable nesting rules
-        },
-      },  
-
-      // Example: CSSNano plugin to minify the CSS for production
-      cssnano: {
-        preset: "default", // Use the default preset for CSSNano
+  // vite configurations
+  vite: {
+    resolve: {
+      alias: {
+        '#app-manifest': '/node_modules/nuxt/dist/app/composables/manifest.js', // Verify this path
       },
     },
   },
 
-  plugins: [
-    // Plugins
-  ],
+  css: ["@/assets/css/main.css", "@/assets/css/normalize.css"], // Global CSS
 
+  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],  // Plugins to run before rendering the page
   components: true,
 
-  buildModules: [
-    // Build modules
-  ],
-
-  modules: [
-    // Modules
-  ],
-
+  buildModules: ['@nuxtjs/eslint-module'], // Build modules
+  modules: [],  // Modules for dev and build (recommended)
   build: {
-    // Build configuration
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
   },
 
   compatibilityDate: "2025-01-18",
+},
+/**
+  buildDir: 'nuxt-dist',
+   */
 };

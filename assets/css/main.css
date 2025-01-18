@@ -1,4 +1,44 @@
 /* Import Tailwind CSS */
+/* Import base styles */
 @import "tailwindcss/base";
+/* Import component styles */
 @import "tailwindcss/components";
+/* Import utility styles */
 @import "tailwindcss/utilities";
+
+
+/* Global CSS */
+
+.paragraph {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 300; /* font-light */
+    color: #4a5568; /* text-gray-700 */
+}
+
+.H1 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #1a202c; /* text-gray-900 */
+}
+
+.transform-fade-down-enter-active,
+.transform-fade-down-leave-active {
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+.transform-fade-down-enter, .transform-fade-down-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(-0.5rem); /* -translate-y-2 equivalent */
+}
+
+/* for remove arrow spinner button on input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}

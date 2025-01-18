@@ -5,7 +5,7 @@
         <a href="/">CAD & CODES</a>
       </div>
       <!-- Navigation Links -->
-      <nav>
+      <nav class="fixed top-0 w-screen z-30 transition-opacity duration-300 ease-in-out mb-12 opacity-100 pointer-events-auto">
         <ul class="flex space-x-4">
           <li><a href="/" class="hover:text-gray-400">Home</a></li>
           <li><a href="/about" class="hover:text-gray-400">About Us</a></li>

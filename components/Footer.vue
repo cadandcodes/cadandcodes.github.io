@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-gray-800 p-4 text-white mt-8">
+    <footer class="max-w-screen-xl px-8 mx-auto">
       <div class="container mx-auto text-center">
         <!-- Copyright Information -->
         <p>&copy; 2025 Company Name. All rights reserved.</p>

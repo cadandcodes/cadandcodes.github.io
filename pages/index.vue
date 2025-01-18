@@ -2,8 +2,8 @@
   <div>
     <Header />
     <main class="p-4">
-      <h2 class="text-xl font-semibold">Welcome to Our Company</h2>
-      <p class="mt-2">We provide XYZ services...</p>
+      <h2 class="text-xl font-semibold">Empowering Your Business with Cutting-Edge Technology</h2>
+      <p class="mt-2">Shaping the Future with Precision Design and Code Mastery</p>
     </main>
     <Footer />
   </div>
