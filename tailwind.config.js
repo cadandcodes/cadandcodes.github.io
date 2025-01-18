@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-export const content = [
-  './components/**/*.{vue,js,ts}',
-  './layouts/**/*.vue',
-  './pages/**/*.vue',
-  './plugins/**/*.{js,ts}',
-  './nuxt.config.{js,ts}',
-];
-export const theme = {
-  extend: {},
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
+  theme: {
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
+    },
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 };
-export const plugins = [];

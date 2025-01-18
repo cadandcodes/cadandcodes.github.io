@@ -1,20 +1,21 @@
 <template>
-    <footer class="max-w-screen-xl px-8 mx-auto">
-      <div class="container mx-auto text-center">
-        <!-- Copyright Information -->
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
-        <!-- Social Media Links -->
-        <div class="mt-4">
-          <a href="https://twitter.com" target="_blank" class="mx-2 hover:text-gray-400">Twitter</a>
-          <a href="https://facebook.com" target="_blank" class="mx-2 hover:text-gray-400">Facebook</a>
-          <a href="https://linkedin.com" target="_blank" class="mx-2 hover:text-gray-400">LinkedIn</a>
-        </div>
+  <!-- Footer container with max width and padding -->
+  <footer class="max-w-screen-xl px-8 mx-auto">
+    
+    <div class="container mx-auto text-center">
+      <!-- Copyright Information -->
+      <p>&copy; 2025 Company Name. All rights reserved.</p>
+      <!-- Social Media Links -->
+      <div class="mt-4">
+        <a href="https://twitter.com" target="_blank" class="mx-2 hover:text-gray-400">Twitter</a>
+        <a href="https://facebook.com" target="_blank" class="mx-2 hover:text-gray-400">Facebook</a>
+        <a href="https://linkedin.com" target="_blank" class="mx-2 hover:text-gray-400">LinkedIn</a>
       </div>
-    </footer>
-  </template>
-  
-  <script setup>
-  </script>
-  
-  <style scoped>
-  </style>
+    </div>
+  </footer>
+</template>
+
+<script setup>
+</script>
+
+<style scoped></style>
