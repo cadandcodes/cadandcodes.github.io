@@ -1,4 +1,0 @@
-# Disallow crawling of Nuxt's internal files
-User-agent: *
-Disallow: /_nuxt/
-
