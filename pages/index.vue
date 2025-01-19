@@ -1,18 +1,20 @@
 <template>
   <div>
+    <Header />
     <h1>Welcome to the Home Page</h1>
-    <p>This is the content of your homepage.</p>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  // Define any data, methods, or components here
 }
 </script>
 
 <style scoped>
-h1 {
-  color: #333;
-}
+/* Add your styles here */
 </style>
