@@ -7,5 +7,9 @@ export default defineNuxtConfig({
     enabled: true
   },
   pages: true,  // Enable to use the pages/ directory
+
+  vite: {
+    // Comment out any custom configuration
+  }
 })
 
