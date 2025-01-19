@@ -1,17 +1,47 @@
 {
-  "name": "nuxt-app",
+  "name": "cad-and-codes",
+  "version": "1.0.0",
+  "description": "CAD & CODES - Empowering Your Business with Cutting-Edge Technology",
+  "author": "Md Anamul Hasan (Anam)",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt preview",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "@pinia/nuxt": "^0.4.8",
     "nuxt": "^3.15.2",
+    "nuxt3": "^0.8.0",
+    "pinia": "^2.3.0",
     "vue": "latest",
     "vue-router": "latest"
-  }
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "tailwindcss",
+    "mechanical-design",
+    "cad",
+    "gd&t",
+    "engineering",
+    "github-actions"
+  ]
 }
