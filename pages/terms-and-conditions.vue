@@ -3,7 +3,7 @@
   <div>
     <Navbar />
     <section>
-      <h1>Terms of Service</h1>
+      <h1>Terms and Conditions</h1>
       <p>Details about your terms of service go here.</p>
     </section>
     <Footer />
