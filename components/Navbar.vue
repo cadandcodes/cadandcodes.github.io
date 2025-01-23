@@ -5,12 +5,13 @@
         <div class="flex-1 md:flex md:items-center md:gap-12">
           <a class="block text-teal-600 dark:text-teal-300" href="/">
             <span class="sr-only">Home</span>
-
-            <a
-              href="/"
-              class="font-sans flex text-3xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-400 hover:text-indigo-600 select-none logo"
-              >CAD & CODES<span class="text-teal-600"></span
-            ></a>
+            <div>
+              <a
+                href="/"
+                class="font-sans flex text-3xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-400 hover:text-indigo-600 select-none logo"
+                >CAD & CODES<span class="text-teal-600"></span
+              ></a>
+            </div>
           </a>
         </div>
 
@@ -59,6 +60,14 @@
                   href="/blog"
                 >
                   Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hover:font-bold text-gray-700 transition hover:text-gray-900 dark:text-white dark:hover:text-white/75"
+                  href="/contact"
+                >
+                  Contact Us
                 </a>
               </li>
             </ul>

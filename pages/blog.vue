@@ -1,12 +1,7 @@
 <template>
     <div>
       <Navbar />
-      <div class="container mx-auto p-4">
-        <h1 class="text-3xl font-bold">My Blog</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <!-- Add blog posts here -->
-        </div>
-      </div>
+      <Blogs />
       <Footer1 />
       <Footer2 />
     </div>
@@ -14,6 +9,7 @@
   
   <script setup>
   import Navbar from '~/components/Navbar.vue'
+  import Blogs from '~/components/Blogs.vue'
   import Footer1 from '~/components/Footer1.vue'
   import Footer2 from '~/components/Footer2.vue'
   </script>

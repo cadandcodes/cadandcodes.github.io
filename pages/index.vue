@@ -62,7 +62,9 @@
     </div>
 
     <Testimonial />
+
     <Footer1 />
+
     <Footer2 />
   </div>
 </template>

@@ -34,7 +34,7 @@
               </li>
 
               <li>
-                <a class="flex-1 text-gray-700 hover:text-gray-900" href="#">
+                <a class="flex-1 text-gray-700 hover:text-gray-900" href="/team">
                   Meet the Team
                 </a>
               </li>
