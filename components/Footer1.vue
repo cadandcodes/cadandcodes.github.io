@@ -7,8 +7,8 @@
         <div>
           <a
             href="#_"
-            class="font-sans flex text-4xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-900 hover:text-teal-900 select-none logo"
-            >CAD & CODES<span class="text-indigo-600"></span
+            class="font-sans flex text-4xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-900 hover:text-indigo-600 select-none logo"
+            >CAD & CODES<span class="text-teal-600"></span
           ></a>
 
           <p

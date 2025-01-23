@@ -8,8 +8,8 @@
 
             <a
               href="/"
-              class="font-sans flex text-3xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-400 hover:text-teal-900 select-none logo"
-              >CAD & CODES<span class="text-indigo-600"></span
+              class="font-sans flex text-3xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-400 hover:text-indigo-600 select-none logo"
+              >CAD & CODES<span class="text-teal-600"></span
             ></a>
           </a>
         </div>
@@ -66,5 +66,12 @@
         </div>
       </div>
     </div>
+    <span class="relative flex justify-center">
+      <div
+        class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+      ></div>
+
+      <span class="relative z-10 bg-white px-6"></span>
+    </span>
   </header>
 </template>
