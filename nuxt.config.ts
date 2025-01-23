@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/', // Since it's a user site, use the root
   },
+  vite: {
+    optimizeDeps: {
+      include: ['@headlessui/vue'],
+    },
+  },
   css: ['~/assets/styles/main.css'],
   postcss: {
     plugins: {

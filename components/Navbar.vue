@@ -8,16 +8,44 @@
             <div>
               <a
                 href="/"
-                class="font-sans flex text-3xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-400 hover:text-indigo-600 select-none logo"
-                >CAD & CODES<span class="text-teal-600"></span
-              ></a>
+                class="font-sans flex text-3xl justify-center sm:justify-start items-center gap-2 font-black leading-none text-gray-400 hover:text-indigo-600 select-none logo"
+              >
+                CAD & CODES<span class="text-teal-600"></span>
+              </a>
             </div>
           </a>
         </div>
 
-        <div class="md:flex md:items-center md:gap-12">
-          <nav aria-label="Global" class="hidden md:block">
-            <ul class="flex items-center gap-6 text-sm">
+        <!-- Hamburger Icon for Mobile and Tablet -->
+        <div class="lg:hidden md:hidden">
+          <button
+            @click="toggleMenu"
+            class="text-gray-700 dark:text-white focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div
+          class="hidden md:flex md:items-center md:gap-12"
+          :class="{ 'hidden': !isMenuClosed, 'block': isMenuOpen }"
+        >
+          <nav aria-label="Global">
+            <ul class="flex flex-col md:flex-row items-center gap-6 text-sm">
               <li>
                 <a
                   class="hover:font-bold text-gray-700 transition hover:text-gray-900 dark:text-white dark:hover:text-white/75"
@@ -84,3 +112,35 @@
     </span>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
+};
+</script>
+
+<style scoped>
+.hidden {
+  display: none !important;
+}
+.block {
+  display: block !important;
+}
+@media (min-width: 768px) {
+  .hidden {
+    display: none !important;
+  }
+  .md\:flex {
+    display: flex !important;
+  }
+}
+</style>

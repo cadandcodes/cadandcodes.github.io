@@ -61,7 +61,13 @@
       </section>
     </div>
 
+    <Stats />
+
     <Testimonial />
+
+    <LogoCloudsLTR />
+
+    <LogoCloudsRTL />
 
     <Footer1 />
 
@@ -71,7 +77,10 @@
 
 <script setup>
 import Navbar from "~/components/Navbar.vue";
+import Stats from "~/components/Stats.vue";
 import Testimonial from "~/components/Testimonial.vue";
+import LogoCloudsLTR from "~/components/LogoCloudsLTR.vue";
+import LogoCloudsRTL from "~/components/LogoCloudsRTL.vue";
 import Footer1 from "~/components/Footer1.vue";
 import Footer2 from "~/components/Footer2.vue";
 </script>

@@ -5,18 +5,14 @@
     >
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
-          <a
-            href="#_"
-            class="font-sans flex text-4xl justyfy-center sm:justify-start items-center gap-2 font-black leading-none text-gray-900 hover:text-indigo-600 select-none logo"
-            >CAD & CODES<span class="text-teal-600"></span
-          ></a>
-
           <p
-            class="flex-1 mt-8 space-y-4 text-sm max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
+            class="text-justify flex-1 mt-8 space-y-4 text-sm max-w-md leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
           >
-            CAD and Codes is a leading Engineering and IT Solution company known
-            for its innovative and tailored services in computer-aided design
-            (CAD) and advanced coding.
+            <b>CAD & CODES</b> is a top-tier
+            <b>Engineering and IT Solutions company</b>, offering innovative and
+            customized services in <b>CAD</b> and
+            <b>advanced software development</b> to tackle complex challenges
+            with precision and expertise.
           </p>
         </div>
 
@@ -34,7 +30,10 @@
               </li>
 
               <li>
-                <a class="flex-1 text-gray-700 hover:text-gray-900" href="/team">
+                <a
+                  class="flex-1 text-gray-700 hover:text-gray-900"
+                  href="/team"
+                >
                   Meet the Team
                 </a>
               </li>
@@ -76,7 +75,7 @@
 
             <ul class="mt-8 space-y-4 text-sm">
               <li>
-                <a class="flex-1 text-gray-700 hover:text-gray-900" href="#">
+                <a class="flex-1 text-gray-700 hover:text-gray-900" href="/faq">
                   FAQs
                 </a>
               </li>
@@ -90,7 +89,8 @@
               <li>
                 <a
                   class="group flex justify-center gap-1.5 ltr:sm:justify-start"
-                  href="#"
+                  href="https://api.whatsapp.com/send?phone=8801303042404"
+                  target="_blank"
                 >
                   <span
                     class="text-gray-700 transition group-hover:text-gray-900"
